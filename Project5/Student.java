@@ -1,9 +1,13 @@
 package Project5;
 
-public  class Student extends Person{
+public class Student extends Person {
 
     int sId;
     char speciality;
+
+    public Student() {
+    }
+
     public int getsId() {
         return sId;
     }
@@ -22,18 +26,24 @@ public  class Student extends Person{
 
 
 
-
     @Override
     public void setData(String name, char sex, int age) {
-        this.name=name;
-        this.sex=sex;
-        this.age=age;
+
+    }
+
+    public void setData(String name, char sex, int age,int sId,char speciality) {
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
+        this.sId=sId;
+        this.speciality=speciality;
 
     }
 
 
+
     @Override
     public String getDetail() {
-        return this.name+this.sex+this.age+this.sId+this.speciality;
+        return this.name + this.sex + this.age + this.sId + this.speciality;
     }
 }
