@@ -32,7 +32,7 @@ public class Cube {
 
     public void form1(String form,int height){
         setHeight(height);
-        System.out.println("类别:"+form+" "+"高："+getHeight()+" "+"底面积:"+this.floorSpace);
+        System.out.println("类别:"+form+" "+"高："+getHeight()+" "+"底面积:"+String.format("%.2f", this.floorSpace));
     }
     public void calculate( double floorSpace){
            v1=floorSpace*this.height;
